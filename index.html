@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tu Nombre — Portafolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header class="topbar">
+  <span class="logo">TN<span class="dot">.</span></span>
+  <nav class="dot-nav" aria-label="Navegación de secciones">
+    <button class="dot active" data-index="0" aria-label="Ir a Inicio"></button>
+    <button class="dot" data-index="1" aria-label="Ir a Sobre mí"></button>
+    <button class="dot" data-index="2" aria-label="Ir a Habilidades"></button>
+    <button class="dot" data-index="3" aria-label="Ir a Experiencia"></button>
+    <button class="dot" data-index="4" aria-label="Ir a Proyectos"></button>
+    <button class="dot" data-index="5" aria-label="Ir a Demo"></button>
+    <button class="dot" data-index="6" aria-label="Ir a Mazinger Zero"></button>
+    <button class="dot" data-index="7" aria-label="Ir a Contacto"></button>
+  </nav>
+  <span class="scroll-hint">desplázate →</span>
+</header>
+
+<main id="track" class="track">
+
+  <!-- 00 · INICIO -->
+  <section class="panel" id="panel-0">
+    <span class="panel-index">01 / 08</span>
+    <div class="panel-inner hero">
+      <p class="eyebrow-line">Portafolio — 2026 · sitio de práctica</p>
+      <h1>Tu Nombre<br><span class="accent">construye cosas</span> para la web.</h1>
+      <p class="lede">Desarrollador full-stack enfocado en interfaces rápidas, claras y bien hechas. Este es un recorrido horizontal por mi trabajo — usa la rueda del mouse, las flechas, arrastra o los puntos de arriba.</p>
+      <p class="practice-note">Este sitio es una práctica para aprender cómo funciona una página web de principio a fin: diseño, código, despliegue con Docker y publicación en un servidor propio.</p>
+      <div class="hero-ctas">
+        <button class="cta" data-goto="4">Ver proyectos ↦</button>
+        <button class="cta cta-ghost" data-goto="7">Contactar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 · SOBRE MÍ -->
+  <section class="panel panel-alt" id="panel-1">
+    <span class="panel-index">02 / 08</span>
+    <div class="panel-inner about about-with-photo">
+      <div class="profile-photo-wrap">
+        <img class="profile-photo" src="assets/foto-perfil.svg" alt="Foto de perfil">
+        <p class="photo-caption">Instituto Tecnológico Superior de Cintalapa</p>
+      </div>
+      <div class="about-text">
+        <h2>Sobre mí</h2>
+        <p class="lede">Escribe aquí dos o tres líneas reales sobre tu experiencia: a qué te dedicas, qué tipo de problemas te gusta resolver y qué te distingue. El objetivo es que se lea como una persona, no como una plantilla.</p>
+        <ul class="facts">
+          <li><span class="num">04</span><span class="label">años de experiencia</span></li>
+          <li><span class="num">20+</span><span class="label">proyectos entregados</span></li>
+          <li><span class="num">MX</span><span class="label">disponible remoto</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · HABILIDADES -->
+  <section class="panel" id="panel-2">
+    <span class="panel-index">03 / 08</span>
+    <div class="panel-inner skills">
+      <h2>Habilidades</h2>
+      <div class="skill-cols">
+        <div class="skill-col">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, React</p>
+        </div>
+        <div class="skill-col">
+          <h3>Backend</h3>
+          <p>Node.js, APIs REST, bases de datos</p>
+        </div>
+        <div class="skill-col">
+          <h3>Herramientas</h3>
+          <p>Git, Docker, Dokploy, CI/CD</p>
+        </div>
+      </div>
+      <div class="skill-tags">
+        <span>Python</span><span>JavaScript</span><span>React</span><span>Node.js</span>
+        <span>PostgreSQL</span><span>Docker</span><span>Linux</span><span>Git</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · EXPERIENCIA / EDUCACIÓN -->
+  <section class="panel panel-alt" id="panel-3">
+    <span class="panel-index">04 / 08</span>
+    <div class="panel-inner timeline-section">
+      <h2>Experiencia y educación</h2>
+      <ul class="timeline">
+        <li>
+          <span class="tl-date">2026 — presente</span>
+          <h3>Puesto / rol actual</h3>
+          <p>Empresa o proyecto. Breve descripción de tus responsabilidades principales.</p>
+        </li>
+        <li>
+          <span class="tl-date">2022 — 2026</span>
+          <h3>Instituto Tecnológico Superior de Cintalapa</h3>
+          <p>Carrera / especialidad cursada. Agrega algún logro o proyecto destacado de la escuela.</p>
+        </li>
+        <li>
+          <span class="tl-date">Antes</span>
+          <h3>Experiencia previa o proyectos personales</h3>
+          <p>Lo que hiciste antes de esto: prácticas, freelance, proyectos propios.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 04 · PROYECTOS -->
+  <section class="panel" id="panel-4">
+    <span class="panel-index">05 / 08</span>
+    <div class="panel-inner projects">
+      <h2>Proyectos</h2>
+      <div class="project-list">
+        <article class="project-card">
+          <span class="file-tag">/proyecto-01</span>
+          <h3>Nombre del proyecto</h3>
+          <p>Breve descripción: qué problema resuelve y qué construiste. Una o dos frases.</p>
+          <div class="tags"><span>React</span><span>Node</span><span>PostgreSQL</span></div>
+        </article>
+        <article class="project-card">
+          <span class="file-tag">/proyecto-02</span>
+          <h3>Nombre del proyecto</h3>
+          <p>Breve descripción: qué problema resuelve y qué construiste. Una o dos frases.</p>
+          <div class="tags"><span>Vue</span><span>Docker</span><span>API</span></div>
+        </article>
+        <article class="project-card">
+          <span class="file-tag">/proyecto-03</span>
+          <h3>Nombre del proyecto</h3>
+          <p>Breve descripción: qué problema resuelve y qué construiste. Una o dos frases.</p>
+          <div class="tags"><span>JavaScript</span><span>CSS</span><span>UX</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 · DEMO (gif o video corto) -->
+  <section class="panel panel-alt" id="panel-5">
+    <span class="panel-index">06 / 08</span>
+    <div class="panel-inner demo">
+      <h2>Demo</h2>
+      <p class="lede">Un vistazo corto a mi trabajo en movimiento.</p>
+
+      <!-- Opción A: video corto (mp4). Reemplaza assets/demo.mp4 por el tuyo. -->
+      <video class="demo-media" src="assets/demo.mp4" poster="assets/video-placeholder.svg" controls muted loop playsinline>
+        Tu navegador no soporta video HTML5.
+      </video>
+
+      <!-- Opción B: si prefieres un GIF en vez de video, borra el <video> de arriba
+           y descomenta esta línea, apuntando a tu archivo .gif en /assets -->
+      <!-- <img class="demo-media" src="assets/demo.gif" alt="Demo animado"> -->
+    </div>
+  </section>
+
+  <!-- 06 · MAZINGER ZERO -->
+  <section class="panel" id="panel-6">
+    <span class="panel-index">07 / 08</span>
+    <div class="panel-inner tribute">
+      <h2>Un homenaje</h2>
+      <div class="tribute-wrap">
+        <!-- Coloca tu propia imagen (con derecho de uso) en assets/mazinger.jpg -->
+        <div class="tribute-photo-frame">
+          <img class="tribute-photo" src="assets/mazinger-placeholder.svg" alt="Espacio para tu imagen de Mazinger Zero (agrega una con derechos correspondientes)">
+        </div>
+        <blockquote class="tribute-quote">
+          «Yo soy el final y el principio, el único súper robot, Mazinger ZERO»
+          <cite>— Mazinger Zero</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 · CONTACTO -->
+  <section class="panel panel-alt" id="panel-7">
+    <span class="panel-index">08 / 08</span>
+    <div class="panel-inner contact">
+      <h2>Hablemos</h2>
+      <p class="lede">¿Tienes un proyecto en mente? Escríbeme.</p>
+      <a class="big-link" href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a>
+      <div class="social-row">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="assets/cv.pdf" download>Descargar CV</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="progress-bar" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
