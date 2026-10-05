@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tu Nombre — Portafolio</title>
+<title>Adair — Portafolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -21,9 +21,7 @@
     <button class="dot" data-index="2" aria-label="Ir a Habilidades"></button>
     <button class="dot" data-index="3" aria-label="Ir a Experiencia"></button>
     <button class="dot" data-index="4" aria-label="Ir a Proyectos"></button>
-    <button class="dot" data-index="5" aria-label="Ir a Demo"></button>
-    <button class="dot" data-index="6" aria-label="Ir a Mazinger Zero"></button>
-    <button class="dot" data-index="7" aria-label="Ir a Contacto"></button>
+    <button class="dot" data-index="5" aria-label="Ir a Contacto"></button>
   </nav>
   <span class="scroll-hint">desplázate →</span>
 </header>
@@ -32,30 +30,29 @@
 
   <!-- 00 · INICIO -->
   <section class="panel" id="panel-0">
-    <span class="panel-index">01 / 08</span>
+    <span class="panel-index">01 / 06</span>
     <div class="panel-inner hero">
-      <p class="eyebrow-line">Portafolio — 2026 · sitio de práctica</p>
-      <h1>Tu Nombre<br><span class="accent">construye cosas</span> para la web.</h1>
-      <p class="lede">Desarrollador full-stack enfocado en interfaces rápidas, claras y bien hechas. Este es un recorrido horizontal por mi trabajo — usa la rueda del mouse, las flechas, arrastra o los puntos de arriba.</p>
-      <p class="practice-note">Este sitio es una práctica para aprender cómo funciona una página web de principio a fin: diseño, código, despliegue con Docker y publicación en un servidor propio.</p>
+      <p class="eyebrow-line">Desarrollador Full-Stack — Portafolio 2026</p>
+      <h1>Adair<br><span class="accent">diseño y construyo</span> software.</h1>
+      <p class="lede">Combino interfaces claras con un backend sólido. Me especializo en crear productos web rápidos, mantenibles y centrados en el usuario, desde la primera línea de código hasta el despliegue en producción.</p>
       <div class="hero-ctas">
         <button class="cta" data-goto="4">Ver proyectos ↦</button>
-        <button class="cta cta-ghost" data-goto="7">Contactar</button>
+        <button class="cta cta-ghost" data-goto="5">Contactar</button>
       </div>
     </div>
   </section>
 
   <!-- 01 · SOBRE MÍ -->
   <section class="panel panel-alt" id="panel-1">
-    <span class="panel-index">02 / 08</span>
+    <span class="panel-index">02 / 06</span>
     <div class="panel-inner about about-with-photo">
       <div class="profile-photo-wrap">
-        <img class="profile-photo" src="assets/foto-perfil.jpg" alt="Foto de perfil">
+        <img class="profile-photo" src="assets/foto-perfil.svg" alt="Foto de perfil">
         <p class="photo-caption">Instituto Tecnológico Superior de Cintalapa</p>
       </div>
       <div class="about-text">
         <h2>Sobre mí</h2>
-        <p class="lede">Escribe aquí dos o tres líneas reales sobre tu experiencia: a qué te dedicas, qué tipo de problemas te gusta resolver y qué te distingue. El objetivo es que se lea como una persona, no como una plantilla.</p>
+        <p class="lede">Soy desarrollador full-stack con formación en el Instituto Tecnológico Superior de Cintalapa. Me enfoco en construir productos digitales completos — interfaces claras, APIs robustas y una infraestructura de despliegue confiable — resolviendo problemas reales con soluciones simples y bien documentadas.</p>
         <ul class="facts">
           <li><span class="num">04</span><span class="label">años de experiencia</span></li>
           <li><span class="num">20+</span><span class="label">proyectos entregados</span></li>
@@ -67,7 +64,7 @@
 
   <!-- 02 · HABILIDADES -->
   <section class="panel" id="panel-2">
-    <span class="panel-index">03 / 08</span>
+    <span class="panel-index">03 / 06</span>
     <div class="panel-inner skills">
       <h2>Habilidades</h2>
       <div class="skill-cols">
@@ -93,7 +90,7 @@
 
   <!-- 03 · EXPERIENCIA / EDUCACIÓN -->
   <section class="panel panel-alt" id="panel-3">
-    <span class="panel-index">04 / 08</span>
+    <span class="panel-index">04 / 06</span>
     <div class="panel-inner timeline-section">
       <h2>Experiencia y educación</h2>
       <ul class="timeline">
@@ -118,7 +115,7 @@
 
   <!-- 04 · PROYECTOS -->
   <section class="panel" id="panel-4">
-    <span class="panel-index">05 / 08</span>
+    <span class="panel-index">05 / 06</span>
     <div class="panel-inner projects">
       <h2>Proyectos</h2>
       <div class="project-list">
@@ -144,45 +141,9 @@
     </div>
   </section>
 
-  <!-- 05 · DEMO (gif o video corto) -->
+  <!-- 05 · CONTACTO -->
   <section class="panel panel-alt" id="panel-5">
-    <span class="panel-index">06 / 08</span>
-    <div class="panel-inner demo">
-      <h2>Demo</h2>
-      <p class="lede">Un vistazo corto a mi trabajo en movimiento.</p>
-
-      <!-- Opción A: video corto (mp4). Reemplaza assets/demo.mp4 por el tuyo. -->
-      <video class="demo-media" src="assets/demo.mp4" poster="assets/video-placeholder.svg" controls muted loop playsinline>
-        Tu navegador no soporta video HTML5.
-      </video>
-
-      <!-- Opción B: si prefieres un GIF en vez de video, borra el <video> de arriba
-           y descomenta esta línea, apuntando a tu archivo .gif en /assets -->
-      <!-- <img class="demo-media" src="assets/demo.gif" alt="Demo animado"> -->
-    </div>
-  </section>
-
-  <!-- 06 · MAZINGER ZERO -->
-  <section class="panel" id="panel-6">
-    <span class="panel-index">07 / 08</span>
-    <div class="panel-inner tribute">
-      <h2>Un homenaje</h2>
-      <div class="tribute-wrap">
-        <!-- Coloca tu propia imagen (con derecho de uso) en assets/mazinger.jpg -->
-        <div class="tribute-photo-frame">
-          <img class="tribute-photo" src="assets/mazinger.jpg" alt="Espacio para tu imagen de Mazinger Zero (agrega una con derechos correspondientes)">
-        </div>
-        <blockquote class="tribute-quote">
-          «Yo soy el final y el principio, el único súper robot, Mazinger ZERO»
-          <cite>— Mazinger Zero</cite>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- 07 · CONTACTO -->
-  <section class="panel panel-alt" id="panel-7">
-    <span class="panel-index">08 / 08</span>
+    <span class="panel-index">06 / 06</span>
     <div class="panel-inner contact">
       <h2>Hablemos</h2>
       <p class="lede">¿Tienes un proyecto en mente? Escríbeme.</p>
