@@ -3,15 +3,13 @@
 Sitio de una sola página con navegación horizontal (scroll, flechas, arrastre o dots).
 En móvil (≤720px) cambia automáticamente a diseño vertical normal.
 
-## Secciones incluidas (8 paneles)
-1. **Inicio** — presentación y dos botones (Ver proyectos / Contactar)
-2. **Sobre mí** — foto de 10×10 cm, bio y datos rápidos
+## Secciones incluidas (6 paneles)
+1. **Inicio** — presentación profesional y dos botones (Ver proyectos / Contactar)
+2. **Sobre mí** — foto de 10×10 cm, bio profesional y datos rápidos
 3. **Habilidades** — frontend / backend / herramientas + lista de tecnologías
 4. **Experiencia y educación** — línea de tiempo (incluye el Instituto Tecnológico Superior de Cintalapa)
 5. **Proyectos** — tarjetas con descripción y tecnologías usadas
-6. **Demo** — video corto o GIF de tu trabajo
-7. **Un homenaje** — la frase de Mazinger Zero
-8. **Contacto** — correo, redes y botón de descarga de CV
+6. **Contacto** — correo, redes y botón de descarga de CV
 
 ## Archivos
 - `index.html` — estructura y contenido (edita aquí tu nombre, textos y proyectos)
@@ -24,20 +22,14 @@ Antes de subirlo, reemplaza en `index.html`:
 - "Tu Nombre" por tu nombre real
 - El texto de "Sobre mí", habilidades, experiencia/educación, proyectos y el correo de contacto
 - Los enlaces de GitHub / LinkedIn
-- La frase de la sección "Un homenaje" ya trae la cita de Mazinger Zero — cámbiala si prefieres otra
 - El botón "Descargar CV" apunta a `assets/cv.pdf`, que todavía no existe — agrega tu CV ahí con ese nombre (o cambia la ruta en `index.html`)
 
-## 2. Agregar tus archivos multimedia (carpeta `assets/`)
-Por ahora cada hueco tiene una imagen de relleno (un SVG genérico) para que el sitio no se vea roto. Reemplázalas por tus propios archivos:
+## 2. Agregar tu foto (carpeta `assets/`)
+| Archivo de relleno (ya incluido) | Reemplázalo por | Dónde se usa |
+|---|---|---|
+| `assets/foto-perfil.svg` | tu foto real (jpg/png) | "Sobre mí" — junto al texto "Instituto Tecnológico Superior de Cintalapa" |
 
-| Archivo de relleno (ya incluido) | Reemplázalo por | Dónde se usa | Recomendación |
-|---|---|---|---|
-| `assets/foto-perfil.svg` | tu foto real (jpg/png) | "Sobre mí" — junto al texto "Instituto Tecnológico Superior de Cintalapa" | Imagen cuadrada; se muestra a 10×10 cm |
-| `assets/video-placeholder.svg` (poster) + `assets/demo.mp4` (aún no existe) | tu video corto | Sección "Demo" | Video corto en mp4. El poster se ve mientras no haya video |
-| — | `assets/demo.gif` (opcional) | Alternativa a video | Si prefieres GIF, en `index.html` borra la etiqueta `<video>` de esa sección y descomenta la línea `<img class="demo-media" src="assets/demo.gif">` que está justo debajo |
-| `assets/mazinger-placeholder.svg` | tu propia imagen de Mazinger | Sección "Un homenaje" | No incluí artwork oficial del manga por derechos de autor — usa una imagen tuya o con el permiso correspondiente |
-
-Importante: si cambias el nombre o la extensión del archivo (por ejemplo subes `foto.jpg` en vez de `foto-perfil.svg`), actualiza también el atributo `src` correspondiente en `index.html`.
+Si subes tu foto con otro nombre o extensión (por ejemplo `foto.jpg`), actualiza también el atributo `src` en `index.html`, en la línea de `profile-photo`.
 
 ## 3. Probar en local (opcional)
 No necesitas nada especial, es HTML/CSS/JS puro:
